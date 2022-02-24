@@ -8,7 +8,7 @@ export default {
      * @returns {number} that number, plus one.
      */
 
-     updateData: async (id, data) => {
+    updateData: async (id, data) => {
         let obj = await Product.findOneAndUpdate({ _id: id }, data, {
             new: true
         })
@@ -24,5 +24,4 @@ export default {
         const data = await Product.find()
         return data
     }
-
 }
