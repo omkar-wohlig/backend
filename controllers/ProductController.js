@@ -55,7 +55,7 @@ router.post("/create", async (req, res) => {
 })
 router.put("/:id", async (req, res) => {
     try {
-        const data = await PersonModel.updateData(req.params.id, req.body)
+        const data = await ProductModel.updateData(req.params.id, req.body)
         res.json(data)
     } catch (error) {
         console.error(error)
